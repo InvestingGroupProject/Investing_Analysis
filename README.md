@@ -22,7 +22,7 @@ Columns to consider:
 In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
 
 1. How has the stock market, specifically S&P500, changed in the last X years?
-2. What has contributed to the changes in gas prices in the last x years? 
+2. What drives petroleum product prices? 
 4. Can we predict gas or stock price behavior? 
 
 **Communication:**
@@ -43,6 +43,8 @@ Our team will be commmunicating through slack. We have also scheduled recurring 
 [Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
 
 # Machine Learning Model
+
+Supervised Machile Learning model
 
 # Database Integration
 
