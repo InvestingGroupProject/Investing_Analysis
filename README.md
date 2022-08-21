@@ -1,43 +1,47 @@
 # Final Project: Group Capstone
-Group Number 4: Investing
 
-Selected Topic: Correlation between S&P 500 and Gas Prices in the last 3 years
-# Investing_Analysis
+**Correlation between S&P 500 and Gas Prices**
 
-Reason for Topic: 
+**Group Number 4:** Claire D, John M. Nadiezhda H, Monica J
 
-Description of Data Source:
+# Stock_Analysis
+ 
+**Reason for Topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact. 
 
+**Description of Data Source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA for the 
 
-Questions to Answer
+1. S&P 500 Index (Yahoo)
+2. Weekly Gas Prices (Kaggle & EIA)
+3. Timefrmae: X-2021
 
-1. How gas prices changed during the pandemic?
+**Questions to Answer**
+In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
 
-2. How the Stock market specially the S&P 500 prices changed during the pandemic?
+1. How has the stock market, specifically S&P500, changed in the last X years?
+2. What has contributed to the changes in gas prices in the last x years? 
+4. Can we predict gas or stock price behavior? 
 
-3. Is there a correlation between them?
-
-4. Can we predict the price behavior...
-
-
+**Communication**
+Our team will be commmunicating through slack. We have also scheduled recurring zoom check-ins for Saturdays to help prepare for the week ahead. We have split role responsibilities but are also working together through the dataset and clean up. 
 
 Group Roles
 
-Square: The team member in the square role will be responsible for the repository.
+**Square:** The team member in the square role will be responsible for the repository. Week 1 - Monica
 
+**Triangle:** The member in the triangle role will create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps. Week 1 - Nadie
 
-Triangle: The member in the triangle role will create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps.
+**Circle:** The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project. Week 1 - Claire
 
+**X:** The member in the X role will decide which technologies will be used for each step of the project. Week 1 - John
 
-Circle: The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project.
+# Presentation 
 
-
-X: The member in the X role will decide which technologies will be used for each step of the project.
-
+[Stock & Gas Price Google Sheet Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
 
 # Machine Learning Model
 
 # Database Integration
 
 # Dashboard
-No dashboard yet.
+We will be creating a Tableau Dashboard 
+
