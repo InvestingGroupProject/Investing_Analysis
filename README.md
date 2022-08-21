@@ -12,7 +12,7 @@
 
 1. S&P 500 Index (Yahoo)
 2. Weekly Gas Prices (Kaggle & EIA)
-3. Timefrmae: X-2021
+3. Timeframe: X-2021
 
 **Questions to Answer**
 In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
