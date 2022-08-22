@@ -44,7 +44,10 @@ Our team will be commmunicating through slack. We have also scheduled recurring 
 
 # Machine Learning Model
 
-Supervised Machile Learning model
+Supervised Machine Learning model
+Liner Regression
+Ensemble Methods
+Data Types: Multivariate
 
 # Database Integration
 
