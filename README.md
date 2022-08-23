@@ -15,8 +15,11 @@
 
 **Description of Data Source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
 
-1. Stock: [GSPC Weekly Stock Data (2000-2022)](https://github.com/InvestingGroupProject/Investing_Analysis/blob/main/Resources/Index%20%26%20Stocks/GSPC_Weekly_stockdata_2000-2022.06.csv) & CVX and XOM Daily Stock Price Open (2000-06/10/2022)
+1. Stock: [GSPC Weekly Stock Data (2000-2022)](https://github.com/InvestingGroupProject/Investing_Analysis/blob/main/Resources/Index%20%26%20Stocks/GSPC_Weekly_stockdata_2000-2022.06.csv) & CVX and XOM Daily Stock Price Open (2000-06/10/2022)              
+Source: https://finance.yahoo.com/
+
 2. Gas: [Weekly US Regular All Formula Price (8/20/1990-8/15/20222)](https://github.com/InvestingGroupProject/Investing_Analysis/blob/main/Resources/GasData/Kaggle_Gas_Data.csv) & [Weekly U.S. Ending Stocks of Total Gasoline (1/5/1990–8/12/2022)](https://github.com/InvestingGroupProject/Investing_Analysis/blob/main/Resources/GasData/EIA%20-%20Weekly_U.S._Ending_Stocks_of_Total_Gasoline.csv)
+Source: https://www.eia.gov/petroleum/gasdiesel/
 
 Columns to consider:
 1. By Region CA CO FL TX NY All_Grades_All_Formulations_Retail_Gasoline_Prices_Weekly
