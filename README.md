@@ -30,19 +30,6 @@ In addition to understanding if there is a correlation between stock and gas pri
 2. What drives petroleum product prices? 
 4. Can we predict gas or stock price behavior? 
 
-**Communication:**
-Our team will be commmunicating through slack. We have also scheduled recurring zoom check-ins for Saturdays to help prepare for the week ahead. We have split role responsibilities but are also working together through the dataset and clean up. 
-
-**Group Roles**
-
-   **Square:** The team member in the square role will be responsible for the repository. (Week 1 - Monica)
-   
-   **Triangle:** The member in the triangle role will create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps. (Week 1 - Nadia)
-
-   **Circle:** The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project. (Week 1 - Claire)
-
-   **X:** The member in the X role will decide which technologies will be used for each step of the project. (Week 1 - John)
-
 # Presentation 
 
 [Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
