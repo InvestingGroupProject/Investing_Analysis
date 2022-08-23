@@ -4,6 +4,11 @@
 
 **Group Number 4:** Claire D, John M. Nadiezhda H, Monica J
 
+**Description of the communication protocols:** 
+- Communication thru Slack Channel - `investing-group-project`
+- Every Monday and Wednesday in-Class catch-up
+- Every Saturday Weekly catch-up meeting Google meeting or Zoom meeting
+
 # Stock_Analysis
  
 **Reason for Topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact. 
