@@ -9,7 +9,7 @@
 - Every Monday and Wednesday in-Class catch-up
 - Every Saturday Weekly catch-up meeting Google meeting or Zoom meeting
 
-# Stock_Analysis
+# Stock_And_Gas_Analysis
  
 **Reason for Topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact. 
 
