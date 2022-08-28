@@ -40,11 +40,25 @@ In addition to understanding if there is a correlation between stock and gas pri
 # Machine Learning Model
 
 Supervised Machine Learning model
+
 Liner Regression
+
 Ensemble Methods
+
 Data Types: Multivariate
 
 # Database Integration
+1. Sample data that mimics the expected final database structure or schema
+
+![image](https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png)
+
+
+
+
+
+2. Draft machine learning module is connected to the provisional database
+
+
 
 # Dashboard
 We will be creating a Tableau Dashboard 
