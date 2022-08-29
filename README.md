@@ -53,7 +53,7 @@ Data Types: Multivariate
 ![image](https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png)
 
 
-
+![image](https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png)
 
 
 2. Draft machine learning module is connected to the provisional database
