@@ -78,7 +78,7 @@ Ensemble Methods
 
 2. Draft machine learning module is connected to the provisional database
 
-
+- We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
 # Dashboard
 We will be creating a Tableau Dashboard 
