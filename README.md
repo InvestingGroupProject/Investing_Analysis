@@ -16,10 +16,12 @@
 **Description of Data Source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
 
 1. Stock: GSPC Weekly Stock Data, CVX and XOM Daily Stock Price Open           
-Source: [Yahoo Finance](https://finance.yahoo.com/)
+
+   Source: [Yahoo Finance](https://finance.yahoo.com/)
 
 2. Gas: Weekly US Regular All Formula Price, Weekly U.S. Ending Stocks of Total Gasoline 
-Source: [EIA](https://www.eia.gov/petroleum/gasdiesel/)
+
+   Source: [EIA](https://www.eia.gov/petroleum/gasdiesel/)
 
 3. Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Gas%20and%20Stocks.csv)
 
