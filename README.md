@@ -39,13 +39,29 @@ In addition to understanding if there is a correlation between stock and gas pri
 
 # Machine Learning Model
 
-Supervised Machine Learning model
-
-Liner Regression
-
-Ensemble Methods
+For the first part on the Machine learning section. We wil be using Supervised Machine Learning Linear Regression Model to test the correlation between the Gas Prices and Stock Prices.
 
 Data Types: Multivariate
+
+Our independent variable is the Stock Prices and our Y variable is the Gas Prices.
+
+
+
+The Scatter Plot below indicates and it would be some sort of correlation, however we also see some data stuck in one area which can indicate more than one model here would be ideal in order to get the most accurate results.
+
+
+INSERT GRAPH HERE
+
+Using Scikit-Learn to perform a Linear Regression test for 1,068 values we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304 The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lack steepness in which case more than one model would be use to test correlation and find a better prediction.
+
+
+INSERT GRAPH WITH LINE HERE
+
+
+Second Model
+Ensemble Methods
+
+
 
 # Database Integration
 1. Sample data that mimics the expected final database structure or schema
