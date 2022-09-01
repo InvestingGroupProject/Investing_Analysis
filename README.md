@@ -82,22 +82,26 @@ Ensemble Methods
 
 ![image](https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png)
 
-
 ![image](https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png)
 
+2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
-2. Draft machine learning module is connected to the provisional database
+**Segment 2**
 
-- We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
+1. Database stores static data for use during the project
+
+2. Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
+
+3. Includes at least two tables (or collections, if using MongoDB)
+
+4. Includes at least one join using the database language (not including any joins in Pandas)
+
+5. Includes at least one connection string (using SQLAlchemy or PyMongo)
 
 ### Dashboard
 
-**Segment 1**
-
-[Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes)
-
 **Segment 2** 
 
-  1. Storyboard on Google Slide(s): Description of the tool(s) that will be used to create final dashboard
-  2. Description of interactive element(s)
+  1. Storyboard using [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes)
+  2. Description of interactive element(s) 
 
