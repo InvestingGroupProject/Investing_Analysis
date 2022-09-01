@@ -47,18 +47,18 @@ Data Types: Multivariate
 
 Our independent variable is the Stock Prices and our Y variable is the Gas Prices.
 
-![](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Table_image.png)
-
+<p align="center" width="100%">
+    <img width="88%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Table_image.png">
 
 The Scatter Plot below indicates and it would be some sort of correlation, however we also see some data stuck in one area which can indicate more than one model here would be ideal in order to get the most accurate results.
 
-
-![](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png)
+<p align="center" width="100%">
+    <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png">
 
 Using Scikit-Learn to perform a Linear Regression test for 1,068 values we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304 The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lack steepness in which case more than one model would be use to test correlation and find a better prediction.
 
-
-![](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png)
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
 
 Second Model
 Ensemble Methods
@@ -76,9 +76,11 @@ Ensemble Methods
 
 1. Sample data that mimics the expected final database structure or schema
 
-![image](https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png)
+<p align="center" width="100%">
+    <img width="80%" src="https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png">
 
-![image](https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png)
+<p align="center" width="100%">
+    <img width="66%" src="https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png">
 
 2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
