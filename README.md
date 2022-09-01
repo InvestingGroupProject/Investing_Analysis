@@ -16,9 +16,7 @@
 **Segment 1**
 1. **Selected Topic:** Correlation between S&P 500 and Gas Prices
 2. **Reason why we've selected our topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact.
-3. **Description of data source**
-
-   We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
+3. **Description of data source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
 
    1. Stock: GSPC Weekly Stock Data, CVX and XOM Daily Stock Price Open           
 
@@ -29,6 +27,7 @@
    Source: [EIA](https://www.eia.gov/petroleum/gasdiesel/)
 
    3. Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Gas%20and%20Stocks.csv)
+  
 4. **Questions we hope to answer:** In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
 
    1. How has the stock market, specifically S&P500, changed in the last X years?
