@@ -77,10 +77,10 @@ Ensemble Methods
 1. Sample data that mimics the expected final database structure or schema
 
 <p align="center" width="100%">
-    <img width="80%" src="https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png">
+    <img width="85%" src="https://user-images.githubusercontent.com/103073631/187094904-ad69213d-7c7e-4aeb-9f9c-1c0b5162be96.png">
 
 <p align="center" width="100%">
-    <img width="66%" src="https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png">
+    <img width="75%" src="https://user-images.githubusercontent.com/103073631/187143985-7e34064a-570c-4a60-8bce-0dc01b367576.png">
 
 2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
