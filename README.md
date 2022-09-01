@@ -94,7 +94,7 @@ Ensemble Methods
 
 **Segment 1**
 
-We will be creating a Tableau Dashboard 
+[Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes)
 
 **Segment 2** 
 
