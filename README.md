@@ -1,46 +1,104 @@
 # Final Project: Group Capstone
 
-**Correlation between S&P 500 and Gas Prices**
-
 **Group Number 4:** Claire D, John M. Nadiezhda H, Monica J
 
-# Stock_Analysis
- 
-**Reason for Topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact. 
+**Description of the communication protocols:** 
+  - Communication thru Slack Channel - `investing-group-project`
+  - Every Monday and Wednesday in-Class catch-up
+  - Every Saturday Weekly catch-up meeting Google meeting or Zoom meeting
 
-**Description of Data Source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA for the 
+# Stock And Gas Analysis
 
-1. S&P 500 Index (Yahoo)
-2. Weekly Gas Prices (Kaggle & EIA)
-3. Timeframe: X-2021
+### Presentation 
 
-**Questions to Answer**
-In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
+[Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing) 
 
-1. How has the stock market, specifically S&P500, changed in the last X years?
-2. What has contributed to the changes in gas prices in the last x years? 
-4. Can we predict gas or stock price behavior? 
+**Segment 1**
+1. **Selected Topic:** Correlation between S&P 500 and Gas Prices
+2. **Reason why we've selected our topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact.
+3. **Description of data source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
 
-**Communication**
-Our team will be commmunicating through slack. We have also scheduled recurring zoom check-ins for Saturdays to help prepare for the week ahead. We have split role responsibilities but are also working together through the dataset and clean up. 
+   1. Stock: GSPC Weekly Stock Data, CVX and XOM Daily Stock Price Open (Source: [Yahoo Finance](https://finance.yahoo.com/))
 
-Group Roles
+   2. Gas: Weekly US Regular All Formula Price, Weekly U.S. Ending Stocks of Total Gasoline (Source: [EIA](https://www.eia.gov/petroleum/gasdiesel/))
 
-**Square:** The team member in the square role will be responsible for the repository. Week 1 - Monica
+   3. Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Gas%20and%20Stocks.csv)
+  
+4. **Questions we hope to answer:** In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
 
-**Triangle:** The member in the triangle role will create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps. Week 1 - Nadie
+   1. How has the stock market, specifically S&P500, changed in the last X years?
+   2. What drives petroleum product prices? 
+   4. Can we predict gas or stock price behavior? 
 
-**Circle:** The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project. Week 1 - Claire
+**Segment 2**
 
-**X:** The member in the X role will decide which technologies will be used for each step of the project. Week 1 - John
+5. **Description of the data exploration phase of the project:**
+6. **Description of the analays phase of the project:**
 
-# Presentation 
+### Machine Learning Model
 
-[Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
+**Segment 1** 
+   
+   1. **Takes in data in from the provisional database:**  the local database was created by merging large sets of data in a time series table and we exported tables by cvs file to use for models.
+   
+   2. **Outputs label(s) for input data:** For the first part on the Machine learning section. We wil be using Supervised Machine Learning Linear Regression Model to test the correlation between the Gas Prices and Stock Prices.
 
-# Machine Learning Model
+Data Types: Multivariate
 
-# Database Integration
+Our independent variable is the Stock Prices and our Y variable is the Gas Prices.
 
-# Dashboard
-We will be creating a Tableau Dashboard 
+<p align="center" width="100%">
+    <img width="88%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Table_image.png">
+
+The Scatter Plot below indicates and it would be some sort of correlation, however we also see some data stuck in one area which can indicate more than one model here would be ideal in order to get the most accurate results.
+
+<p align="center" width="100%">
+    <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png">
+
+Using Scikit-Learn to perform a Linear Regression test for 1,068 values we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304 The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lack steepness in which case more than one model would be use to test correlation and find a better prediction.
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
+
+Second Model
+Ensemble Methods
+
+**Segment 2**
+   
+   1. Description of preliminary data preprocessing
+   2. Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
+   3. Description of how data was split into training and testing sets
+   4. Explanation of model choice, including limitations and benefits
+
+### Database Integration
+
+**Segment 1**
+
+1. Sample data that mimics the expected final database structure or schema
+
+<p align="center" width="100%">
+    <img width="95%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database1.png">
+
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database2.png">
+
+2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
+
+**Segment 2**
+
+1. Database stores static data for use during the project
+
+2. Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
+
+3. Includes at least two tables (or collections, if using MongoDB)
+
+4. Includes at least one join using the database language (not including any joins in Pandas)
+
+5. Includes at least one connection string (using SQLAlchemy or PyMongo)
+
+### Dashboard
+
+**Segment 2** 
+
+  1. Storyboard using [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes)
+  2. Description of interactive element(s) 
