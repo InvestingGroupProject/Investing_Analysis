@@ -27,6 +27,10 @@ model <- lm(gas_stock$GasPrice ~ gas_stock$SP_500_Closed_Adj,data=gas_stock) #cr
 #regression line function y = mx + b : Gas price ~ SP500 Index price
 yvals <- model$coefficients["gas_stock$SP_500_Closed_Adj"]*gas_stock$SP_500_Closed_Adj + model$coefficients["(Intercept)"]
 
+
+plt <- ggplot(gas_stock,aes(x=SP_500_Closed_Adj,y=GasPrice)) #import dataset into ggplot2
+plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
+
 # The chi-squared test is used to compare the distribution of frequencies across two groups and tests the following hypotheses:
   
 # H0 : There is no difference in frequency distribution between both groups.
@@ -39,8 +43,6 @@ chisq.test(tb1) #compare categorical distributions
 # fail to reject null
 
 
-plt <- ggplot(gas_stock,aes(x=SP_500_Closed_Adj,y=GasPrice)) #import dataset into ggplot2
-plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
 
 #******************************************************************************************
 # Gas price vs oil company stock price: XOM
@@ -103,7 +105,7 @@ tail(gas_factors)
 colnames(gas_factors)
 
 # Perform linear regression using the lm() function. 
-lm(`US gasoline price` ~ `Saudi Production Change Crude oil`+ gasoline_net_imports, data=gas_factors)
+lm(`US gasoline price` ~ `Saudi Production Change Crude oil`+ gasoline_net_imports + `gasoline U.S. refinery production`, data=gas_factors)
 # Determine the pvalue and the rsqured value for the linear regression model
 summary(lm(`US gasoline price` ~ `Saudi Production Change Crude oil`+ gasoline_net_imports + `gasoline U.S. refinery production`, data=gas_factors))
 gas_factors$DATE
