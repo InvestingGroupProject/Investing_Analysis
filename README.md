@@ -145,6 +145,10 @@ Our initial model choice was a linear regression model since our data fitted a r
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
 
+<p align="center" width="100%">
+    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
+
+
 
 <p align="center" width="100%">
     <img width="50%" src="https://user-images.githubusercontent.com/103073631/188508905-40854408-540b-4a74-b555-6334a2fc5ff0.png">
