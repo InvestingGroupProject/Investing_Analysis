@@ -143,7 +143,8 @@ Our initial model choice was a linear regression model since our data fitted a r
 1. Sample data that mimics the expected final database structure or schema
 
 <p align="center" width="100%">
-    <img width="95%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database1.png">
+    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
+
 
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database2.png">
