@@ -114,22 +114,22 @@ Accuracy score (validation): 0.524
 The prediction vs. Actual
 
   
-<p align="Left" width="60%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png">
+<p align="Left" width="40%">
+    <img width="40%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png">
 
 
 The Confusion Matrix provided the following results
 
 
-<p align="center" width="60%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png">
+<p align="center" width="50%">
+    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png">
     
     
  Finally, the Classification Report provided the following results
  
  
- <p align="center" width="60%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
+ <p align="center" width="50%">
+    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
  
  
    4. Explanation of model choice, including limitations and benefits
