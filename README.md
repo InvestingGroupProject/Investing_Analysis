@@ -66,10 +66,74 @@ Ensemble Methods
 **Segment 2**
    
    1. Description of preliminary data preprocessing
+   For our Machine Learning section, we combined data from Yahoo for the &P 500 index data with weekly gas price data from Kaggle and EIA.
+   Our Initial data comes from csv file with 9 columns and 1,180 rows.
+   The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price.
+   Data Cleaning Step:
+   We removed records that have invalid or null values from the raw data and ended with 1,068 rows. 
+   We also formatted the weeks from date to numerical values to be able to use these data within our model. Most of the data type is Float64 and except for Gasoline Stock Price which is Int64.
+   
    2. Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
-   3. Description of how data was split into training and testing sets
-   4. Explanation of model choice, including limitations and benefits
+   We selected GSPC Close price to be our x label and Gas Price to be our Y label for a scatter plot where we can have an idea of how the data will behave. 
+   Then we reshaped the data using (-1, 1). Then we created a code to run a linear regression model where we dropped Gas Price column and used it to create the Y label and the GSPC Close price for the X label. Created the model with Scikit-learn and perform the linear regression on the 9 columns. Then fit the data into the model. 
+   The next step was to create predicted y values based on X values and plotted the results for a best fit line. The slope was 0.00025558 and the y-intercept was 2.0820572529674304. 
+   To find strong correlation in our data we perform a Decision tree and random forest model with ensemble method such as gradient boosting. 
+   Before we were able to do this we needed to transform our data into a classfication type by adding 6 additional columns where 2 of them contain binary data (0s and 1s). 
+   We then defined our feature set by setting X to include Gasoline stock Price, GSPC Open, GSPC High, GSPC Low, GSPC Close, Stock Perc Change and Stock Change. 
+   Then we defined our target vector which includes the Gas change column only. 
 
+   3. Description of how data was split into training and testing sets
+  The data was split into Train and Test sets with random state of 1, scaled and fitted. For the Gradient Booster we created a classifier object with different learning rates. Then fitted and scored the model and the resulted in the following accuracy scores for each learning rate
+  
+  Learning rate:  0.05
+Accuracy score (training): 0.647
+Accuracy score (validation): 0.569
+
+Learning rate:  0.1
+Accuracy score (training): 0.687
+Accuracy score (validation): 0.584
+
+Learning rate:  0.25
+Accuracy score (training): 0.768
+Accuracy score (validation): 0.610
+
+Learning rate:  0.5
+Accuracy score (training): 0.800
+Accuracy score (validation): 0.588
+
+Learning rate:  0.75
+Accuracy score (training): 0.816
+Accuracy score (validation): 0.569
+
+Learning rate:  1
+Accuracy score (training): 0.828
+Accuracy score (validation): 0.524
+
+
+The prediction vs. Actual
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png">
+
+
+The Confusion Matrix provided the following results
+
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png">
+    
+    
+ Finally, the Classification Report provided the following results
+ 
+ 
+ <p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
+ 
+ 
+   4. Explanation of model choice, including limitations and benefits
+Our initial model choice was a linear regression model since our data fitted a regression type rather than a classification type. However, this did not show our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we wil try to improve it in our next phase. 
+
+ 
 ### Database Integration
 
 **Segment 1**
