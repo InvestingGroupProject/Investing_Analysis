@@ -147,7 +147,8 @@ Our initial model choice was a linear regression model since our data fitted a r
 
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database2.png">
+    <img width="50%" src="https://user-images.githubusercontent.com/103073631/188508905-40854408-540b-4a74-b555-6334a2fc5ff0.png">
+
 
 2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
