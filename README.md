@@ -18,7 +18,7 @@ For our **data source**, we will be combining S&P 500 index data from Yahoo with
    
       [SQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
   
-In addition to understanding if there ire any correlations between stock and gas prices, we also set out to see if the data could tell us:
+In addition to understanding if there are any correlations between stock and gas prices, we also set out to see if the data could tell us:
 
    1. How the stock market, specifically S&P500, has changed in the last 5 years
    2. What drives petroleum product prices; and
