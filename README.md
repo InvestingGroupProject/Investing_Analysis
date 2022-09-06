@@ -26,7 +26,7 @@ In addition to understanding if there are any correlations between stock and gas
 
 ### Machine Learning Model
    
-Our initial data comes from a local database (csv file) with 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price. 
+As mentioned. our data comes from a local database (csv file). It has 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price. 
 
 The first step in building our ML model was to clean up the data. We did this by:
    1. Removing records that had invalid or null values from the raw data. This resulted in 1,068 rows (vs. 1,180)
