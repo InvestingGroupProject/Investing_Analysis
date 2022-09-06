@@ -26,7 +26,10 @@ In addition to understanding if there is a correlation between stock and gas pri
 
 ### Machine Learning Model
    
-To start the Machine Learning Model, a local database was created by merging large sets of data in a time series table and exporting tables by cvs file. Further, we wil be using Supervised Machine Learning Linear Regression Model to test the correlation between the Gas Prices and Stock Prices.
+For our Machine Learning section, we combined data from Yahoo for the S&P 500 index data with weekly gas price data from Kaggle and EIA. Our Initial data comes from a local database (csv file) with 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price.
+   Data Cleaning Step:
+   We removed records that have invalid or null values from the raw data and ended with 1,068 rows. 
+   We also formatted the weeks from date to numerical values to be able to use these data within our model. Most of the data type is Float64 and except for Gasoline Stock Price which is Int64.
 
 Data Types: Multivariate
 
@@ -46,15 +49,7 @@ Using Scikit-Learn to perform a Linear Regression test for 1,068 values we get a
     <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
 
 Second Model
-Ensemble Methods
-   
-   1. Description of preliminary data preprocessing
-   For our Machine Learning section, we combined data from Yahoo for the &P 500 index data with weekly gas price data from Kaggle and EIA.
-   Our Initial data comes from csv file with 9 columns and 1,180 rows.
-   The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price.
-   Data Cleaning Step:
-   We removed records that have invalid or null values from the raw data and ended with 1,068 rows. 
-   We also formatted the weeks from date to numerical values to be able to use these data within our model. Most of the data type is Float64 and except for Gasoline Stock Price which is Int64.
+Ensemble Methods   
    
    2. Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
    We selected GSPC Close price to be our x label and Gas Price to be our Y label for a scatter plot where we can have an idea of how the data will behave. 
