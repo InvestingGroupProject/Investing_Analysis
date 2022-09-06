@@ -145,6 +145,8 @@ Our initial model choice was a linear regression model since our data fitted a r
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
 
+                        Database Integration Table using for Machine Learning and Simple Linear regression R analysis
+
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
 
