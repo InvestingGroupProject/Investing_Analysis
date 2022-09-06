@@ -106,7 +106,7 @@ The Confusion Matrix provided the following results
 
 ### Database Integration
 
-Below is a sample of the data structure we initially used in R
+Below is a sample of the data structure as well as the R analysis we started out with.
 
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
