@@ -28,6 +28,9 @@ In addition to understanding if there are any correlations between stock and gas
    
 As mentioned. our data comes from a local database (csv file). It has 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price. 
 
+<p align="center" width="100%">
+    <img width="90%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/local%20database.png">
+
 The first step in building our ML model was to clean up the data. We did this by:
    1. Removing records that had invalid or null values from the raw data. This resulted in 1,068 rows (vs. 1,180)
    2. Formatting the weeks from date values to numerical values in order to use this within our model. Most of the data type is Float64 except for Gasoline Stock Price which is Int64.
