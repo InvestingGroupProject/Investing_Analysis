@@ -119,7 +119,7 @@ Our initial model choice was a linear regression model since our data fitted a r
  
 ### Database Integration
 
-Below is a sample of the data  final database structure or schema
+Below is a sample of the data structure
 
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
@@ -137,17 +137,6 @@ Below is a sample of the data  final database structure or schema
 
 2. **Draft machine learning module is connected to the provisional database:** We will use local database instead of AWS cloud database to create and merge table by time series, and we will export tables by cvs file to use for analysis and machine learning models.
 
-**Segment 2**
-
-1. Database stores static data for use during the project
-
-2. Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
-
-3. Includes at least two tables (or collections, if using MongoDB)
-
-4. Includes at least one join using the database language (not including any joins in Pandas)
-
-5. Includes at least one connection string (using SQLAlchemy or PyMongo)
 
 ### Dashboard
 
