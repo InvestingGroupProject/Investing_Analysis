@@ -93,8 +93,17 @@ matplot(tn$t,cbind(pred.clim, pred.plim[,-1]),
 
 #-------------[4] Holt-Winters Filter--------------
 hwfit<-HoltWinters(price_ts)
-hwpred <- predict(hwfit, 60, prediction.interval = TRUE,level=0.5)
-plot(hwfit,hwpred,ylab="GasolinePrice", xlab="Time",xlim=c(2001,2029))
+hwpred <- predict(hwfit, n.ahead = 60, prediction.interval = TRUE,level=0.10)
+plot(price_ts, ylab="Gas_Price", xlim=c(2000,2029))
+lines(hwfit$fitted[,1], lty=2, col='blue')
+lines(hwpred[,1], col="red")
+lines(hwpred[,2], lty=2, col="orange")
+lines(hwpred[,3], lty=2, col="orange")
+
+
+
+
+#plot(hwfit,hwpred,ylab="GasolinePrice", xlab="Time",xlim=c(2001,2029))
 #lines(predict(hwfit,n.ahead=60),lwd=1.5, col='blue')
 #plot(hwfit,ylab="Participation Rate (Male)", xlab="Time", lwd=1, col='black',xlim=c(1948,1999))
 #lines(predict(hwfit,n.ahead=60),lwd=1.5, col='blue')
