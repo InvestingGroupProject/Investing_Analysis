@@ -121,9 +121,9 @@ Below are the tables created through a sql query that resulted in the ***Final D
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
 
-### Resources
+### Dashboard
 
-[Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
+[Stock & Gas Price Google Storyboard](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
 
-We also created a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes) to tell our story. Some of the interactive elements will include filters by year (for both gas & stock overview) as well as the various graphs we will be replicating from R and ML.
+We will be creating a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes). Some of the interactive elements include filters by year (for both gas & stock overview) as well as the various graphs we will be replicating from R and ML.
 
