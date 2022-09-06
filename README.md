@@ -1,4 +1,4 @@
-# Final Project: Group Capstone
+# Capstone Project
 
 Our team is meeting three times per week and communicating through slack to complete this capstone project. 
 
