@@ -1,11 +1,6 @@
 # Final Project: Group Capstone
 
-**Group Number 4:** Claire D, John M. Nadiezhda H, Monica J
-
-**Description of the communication protocols:** 
-  - Communication thru Slack Channel - `investing-group-project`
-  - Every Monday and Wednesday in-Class catch-up
-  - Every Saturday Weekly catch-up meeting Google meeting or Zoom meeting
+Our team of 4, is meeting three times per week and communicating through slack to complete this capstone project. 
 
 # Stock And Gas Analysis
 
@@ -13,10 +8,9 @@
 
 [Stock & Gas Price Google Slide Presentation](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing) 
 
-**Segment 1**
-1. **Selected Topic:** Correlation between S&P 500 and Gas Prices
-2. **Reason why we've selected our topic:** Our team was interested in analyzing stock data and after discussing different options, we decided it would be interesting to see if there is any correlation between stock and gas prices. Gas prices reached an all time high earlier in the year and we all felt the impact.
-3. **Description of data source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
+Our group came together with a shared interest in stock data. After discussing several options, we decided to see if there is any correlation between stocks and the high gas prices we all experienced in the last few months. 
+
+**Data source:** We will be combining S&P 500 index data from Yahoo with weekly gas price data from Kaggle and EIA 
 
    1. Stock: GSPC Weekly Stock Data, CVX and XOM Daily Stock Price Open (Source: [Yahoo Finance](https://finance.yahoo.com/))
 
@@ -24,24 +18,15 @@
 
    3. Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Gas%20and%20Stocks.csv)
   
-4. **Questions we hope to answer:** In addition to understanding if there is a correlation between stock and gas prices, we would also like to use the data to answer the following questions:
+In addition to understanding if there is a correlation between stock and gas prices, we also set out to see if the data could tell us:
 
-   1. How has the stock market, specifically S&P500, changed in the last X years?
-   2. What drives petroleum product prices? 
-   4. Can we predict gas or stock price behavior? 
-
-**Segment 2**
-
-5. **Description of the data exploration phase of the project:**
-6. **Description of the analays phase of the project:**
+   1. How the stock market, specifically S&P500, has changed in the last 5 years
+   2. What drives petroleum product prices; and
+   4. If we could predict gas or stock price behavior
 
 ### Machine Learning Model
-
-**Segment 1** 
    
-   1. **Takes in data in from the provisional database:**  the local database was created by merging large sets of data in a time series table and we exported tables by cvs file to use for models.
-   
-   2. **Outputs label(s) for input data:** For the first part on the Machine learning section. We wil be using Supervised Machine Learning Linear Regression Model to test the correlation between the Gas Prices and Stock Prices.
+To start the Machine Learning Model, a local database was created by merging large sets of data in a time series table and exporting tables by cvs file. Further, we wil be using Supervised Machine Learning Linear Regression Model to test the correlation between the Gas Prices and Stock Prices.
 
 Data Types: Multivariate
 
@@ -62,8 +47,6 @@ Using Scikit-Learn to perform a Linear Regression test for 1,068 values we get a
 
 Second Model
 Ensemble Methods
-
-**Segment 2**
    
    1. Description of preliminary data preprocessing
    For our Machine Learning section, we combined data from Yahoo for the &P 500 index data with weekly gas price data from Kaggle and EIA.
@@ -109,9 +92,7 @@ Learning rate:  1
 Accuracy score (training): 0.828
 Accuracy score (validation): 0.524
 
-
-  
-The prediction vs. Actual
+**The prediction vs. Actual**
 
   
 <p align="Left" width="40%">
@@ -138,9 +119,7 @@ Our initial model choice was a linear regression model since our data fitted a r
  
 ### Database Integration
 
-**Segment 1**
-
-1. Sample data that mimics the expected final database structure or schema
+Below is a sample of the data  final database structure or schema
 
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188508795-952d7bf3-6d6d-4a98-9be9-7baca3896e2b.png">
@@ -172,8 +151,5 @@ Our initial model choice was a linear regression model since our data fitted a r
 
 ### Dashboard
 
-**Segment 2** 
-
-  1. Storyboard using [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes)
-  2. Description of interactive element(s) 
+We will be using a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes) to tell our story. 
 
