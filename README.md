@@ -92,8 +92,7 @@ The Confusion Matrix provided the following results
 
 <p align="center" width="50%">
     <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png">
-    
-    
+     
  Finally, the Classification Report provided the following results
  
  <p align="center" width="50%">
