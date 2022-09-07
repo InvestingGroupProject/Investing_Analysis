@@ -122,14 +122,16 @@ Below are the tables created through a sql query that resulted in the ***Final D
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
   
 
-Below is the analysis structure in R using the data source above
+Below is the analysis structure in R using the data source above. 
 <p align="center" width="100%">
     <img width="85%" src="https://user-images.githubusercontent.com/103073631/188508905-40854408-540b-4a74-b555-6334a2fc5ff0.png">
 
 And the code used to integrate our data source is outlined below:
 <p align="center" width="100%">
     <img width="95%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/data%20integration.png">
-   
+    
+Further, we can confirm a successful [integration](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Exportingsummarytable.png), of three tables: [Gas Factor](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasFactorsTable.png), [Gas Prices](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasPriceTable.png) and a [Gas Summary Table](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Summary_gasoline_price_factors.png)
+
 ### Dashboard
 
 [Stock & Gas Price Google Storyboard](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
