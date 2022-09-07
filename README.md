@@ -109,7 +109,7 @@ The Confusion Matrix provided the following results
 Below is an example of the data structure we started out with.
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/main%20data%20integration.png">
+    <img width="90%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/main%20data_R%20analysis.png">
 
 Below are the tables created through a sql query that resulted in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successfull importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
 
@@ -120,11 +120,6 @@ Below are the tables created through a sql query that resulted in the ***Final D
 
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
-  
-
-Below is the analysis structure in R using the data source above. 
-<p align="center" width="100%">
-    <img width="85%" src="https://user-images.githubusercontent.com/103073631/188508905-40854408-540b-4a74-b555-6334a2fc5ff0.png">
 
 And the code used to integrate our data source is outlined below:
 <p align="center" width="100%">
