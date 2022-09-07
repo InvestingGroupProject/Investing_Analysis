@@ -123,8 +123,8 @@ Below are the tables created through a sql query that resulted in the ***Final D
 
 And the code used to integrate our data source is outlined below:
 <p align="center" width="100%">
-    <img width="95%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/data%20integration.png">
-    
+    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188805371-647e6f16-66a3-4eab-a585-2a6f00df19b2.png">
+
 Further, we can confirm a successful [integration](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Exportingsummarytable.png), of three tables: [Gas Factor](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasFactorsTable.png), [Gas Prices](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasPriceTable.png) and a [Gas Summary Table](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Summary_gasoline_price_factors.png)
 
 ### Dashboard
