@@ -57,4 +57,4 @@ Data Types: Multivariate
 # Database Integration
 
 # Dashboard
-Claire's part - Tableau Dashboard 
+[Claire's part - Tableau Dashboard](https://public.tableau.com/app/profile/claire.deng/viz/ProjectDashboard-ClaireSection/Story1)
