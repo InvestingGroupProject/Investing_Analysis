@@ -127,5 +127,5 @@ Further, we can confirm a successful [integration](https://github.com/InvestingG
 
 [Stock & Gas Price Google Storyboard](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
 
-We will be creating a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockandGasAnalysis/Story1?publish=yes). Some of the interactive elements include filters by year (for both gas & stock overview) as well as the various graphs we will be replicating from R and ML.
+We will be creating a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockGasAnalysisCapstoneProject/Story1?publish=yes). Some of the interactive elements include filters by year (for both gas & stock overview) as well as the various graphs we will be replicating from R and ML.
 
