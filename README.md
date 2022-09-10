@@ -57,4 +57,4 @@ Data Types: Multivariate
 # Database Integration
 
 # Dashboard
-We will be creating a Tableau Dashboard 
+Claire's part - Tableau Dashboard 
