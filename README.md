@@ -45,8 +45,18 @@ For the first model, we selected GSPC Close price as our x label and Gas Price a
 
 <p align="center" width="100%">
     <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png">
+    
 
 For the second model, we created a Scikit-learn and performed the linear regression on the 9 columns. Then fit the data into the model. Using Scikit-Learn to perform a Linear Regression test for 1,068 values, we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304. The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lacks steepness. Like the first model, we found that more models are needed to test correlation and find a better prediction.
+
+
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
+      
+We then created a predicted Y values based on X values and plotted the results for a best fit line. The slope was 0.00025558 and the y-intercept was 2.0820572529674304. 
+
+
 
 Further test where necessary for the Linear Regression Model. Therefore we split the data into train and test data (80/20). 
 
@@ -91,21 +101,23 @@ Further test where necessary for the Linear Regression Model. Therefore we split
    
    
    
-# Predicting a new result with Linear Regression
+Predicting a new result with Linear Regression
 lr.predict([[1505.97]])  Result: [2.47487911]
-#The actual number is 1.503
+The actual number is 1.503
 
-# Predicting a new result with Polymonial Regression
+Predicting a new result with Polymonial Regression
 pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
 
 
-#They're both close to the mean for the weekly gas price which is 2.538233
+They're both close to the mean for the weekly gas price which is 2.538233
 
 
-<p align="center" width="100%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
-      
-We then created a predicted Y values based on X values and plotted the results for a best fit line. The slope was 0.00025558 and the y-intercept was 2.0820572529674304. 
+# CLassification Model
+
+
+The Data was also converted into a classification model using the percentage change between the new and old price of gas and stocks where if there was a decrease it will be indicated with a 0 and an increase with a 1.
+
+We used Ensemble methods and Gradient Boosting to complete this part.
 
 **The prediction vs. Actual**
   
