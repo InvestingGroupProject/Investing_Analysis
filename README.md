@@ -48,6 +48,60 @@ For the first model, we selected GSPC Close price as our x label and Gas Price a
 
 For the second model, we created a Scikit-learn and performed the linear regression on the 9 columns. Then fit the data into the model. Using Scikit-Learn to perform a Linear Regression test for 1,068 values, we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304. The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lacks steepness. Like the first model, we found that more models are needed to test correlation and find a better prediction.
 
+Further test where necessary for the Linear Regression Model. Therefore we split the data into train and test data (80/20). 
+
+<p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/training_set_linear_regression.png">
+
+
+
+
+
+<p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/test_set_linear_regression.png">
+   
+   
+   
+   More testing was necessary.
+   We did a prediction error for the Linear Regression Model that resulted in an R2 = 0.093
+   
+   
+   <p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/prediction_error_for_Linear_Regression.jpg">
+   
+   Then a Residual for Linear Regression Model was also generated with a RMSE or mean squared error of 0.7671114762339721. The Root Mean Square Error (RMSE) is the standard deviation of the residuals (prediction errors).
+   
+   
+   <p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/residuals_for_Linear_Regression.jpg">
+      
+   
+   I was also able to compare the Linear Regression Model with a Polynomial Regression model with df =5 with a RMSE of 0.6459460141795336 which is better than the one for the Linear Regression
+   
+   
+    <p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/Polynomial_regression_df5.png">
+
+
+ the Price on the TEST DATA
+ 
+ 
+  <p align="center" width="100%">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/Price_actual_vs_prediction.png">
+   
+   
+   
+# Predicting a new result with Linear Regression
+lr.predict([[1505.97]])  Result: [2.47487911]
+#The actual number is 1.503
+
+# Predicting a new result with Polymonial Regression
+pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
+
+
+#They're both close to the mean for the weekly gas price which is 2.538233
+
+
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
       
@@ -65,28 +119,29 @@ The data was split into Train and Test sets with random state of 1, scaled and f
 **Learning Rate**
    
       Learning rate:  0.05
-      Accuracy score (training): 0.647
-      Accuracy score (validation): 0.569
+Accuracy score (training): 0.667
+Accuracy score (validation): 0.596
 
-      Learning rate:  0.1
-      Accuracy score (training): 0.687
-      Accuracy score (validation): 0.584
+Learning rate:  0.1
+Accuracy score (training): 0.726
+Accuracy score (validation): 0.615
 
-      Learning rate:  0.25
-      Accuracy score (training): 0.768
-      Accuracy score (validation): 0.610
+Learning rate:  0.25
+Accuracy score (training): 0.812
+Accuracy score (validation): 0.620
 
-      Learning rate:  0.5
-      Accuracy score (training): 0.800
-      Accuracy score (validation): 0.588
+Learning rate:  0.5
+Accuracy score (training): 0.876
+Accuracy score (validation): 0.648
 
-      Learning rate:  0.75
-      Accuracy score (training): 0.816
-      Accuracy score (validation): 0.569
+Learning rate:  0.75
+Accuracy score (training): 0.876
+Accuracy score (validation): 0.643
 
-      Learning rate:  1
-      Accuracy score (training): 0.828
-      Accuracy score (validation): 0.524
+Learning rate:  1
+Accuracy score (training): 0.889
+Accuracy score (validation): 0.643
+
 
 The Confusion Matrix provided the following results
 
@@ -99,6 +154,8 @@ The Confusion Matrix provided the following results
     <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
  
 **Current Results**: Our original model choice was a linear regression since our data fitted a regression type rather than a classification type. However, this did not indicate that our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type, we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show that our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we will try to improve it in our next phase. 
+
+**Results Update**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvemet. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
 
 ### Database Integration
 
