@@ -1,7 +1,3 @@
-# Capstone Project
-
-Our team is meeting three times per week and communicating through slack to complete this capstone project. 
-
 # Stock & Gas Analysis
 
 ### Overview 
@@ -10,27 +6,19 @@ Our group came together with a shared interest in stocks. After discussing sever
 
 For our **data source**, we will be combining S&P 500 index data from Yahoo with weekly gas price data from EIA using sql. 
 
-   1. Stock: GSPC Weekly Stock Data, CVX and XOM Daily Stock Price Open (Source: [Yahoo Finance](https://finance.yahoo.com/))
+   1. S&P 500 Index from [Yahoo Finance](https://finance.yahoo.com/))
 
-   2. Gas: Weekly US Regular All Formula Price, Weekly U.S. Ending Stocks of Total Gasoline (Source: [EIA](https://www.eia.gov/petroleum/gasdiesel/))
+   2. Gas Prices from [EIA](https://www.eia.gov/petroleum/gasdiesel/))
 
-   3. Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)
-   
-      [SQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
-  
-In addition to understanding if there are any correlations between stock and gas prices, we also set out to see if the data could tell us:
-
-   1. How the stock market, specifically S&P500, has changed in the last 5 years
-   2. What drives petroleum product prices; and
-   4. If we could predict gas or stock price behavior
+   3. Final Data Source: [PostgresSQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
 
 ### Machine Learning Model
    
-As mentioned. our data comes from a local database (csv file). It has 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volumen, GSPC Adjusted and finally Gas Price. 
+Our data comes from a local database (csv file). It has 9 columns and 1,180 rows. The 9 different columns are Week, Gasoline Stock Price, GSPC Open price, GSPC High price, GSPC Low price, GSPC Volume, GSPC Adjusted and finally Gas Price. 
 
 The first step in building our ML model was to clean up the data. We did this by:
    1. Removing records that had invalid or null values from the raw data. This resulted in 1,068 rows (vs. 1,180)
-   2. Formatting the weeks from date values to numerical values in order to use this within our model. Most of the data type is Float64 except for Gasoline Stock Price which is Int64.
+   2. Formatting the weeks from date values to numerical values to use this within our model. Most of the data type is Float64 except for Gasoline Stock Price which is Int64.
 
 ***Data Types: Multivariate***
 
@@ -112,7 +100,7 @@ pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
 They're both close to the mean for the weekly gas price which is 2.538233
 
 
-# CLassification Model
+# Classification Model
 
 
 The Data was also converted into a classification model using the percentage change between the new and old price of gas and stocks where if there was a decrease it will be indicated with a 0 and an increase with a 1.
@@ -124,7 +112,7 @@ We used Ensemble methods and Gradient Boosting to complete this part.
 <p align="Left" width="40%">
     <img width="40%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png">
     
-To further find strong correlation in our data, we performed a Decision tree and random forest model with ensemble method such as gradient boosting. Before we were able to do this, we needed to transform our data into a classfication type by adding 6 additional columns where 2 of them contain binary data (0s and 1s). We then defined our feature set by setting X to include Gasoline stock Price, GSPC Open, GSPC High, GSPC Low, GSPC Close, Stock Perc Change and Stock Change. Finally, we defined our target vector which includes the Gas change column only. 
+To further find strong correlation in our data, we performed a Decision tree and random forest model with ensemble method such as gradient boosting. Before we were able to do this, we needed to transform our data into a classification type by adding 6 additional columns where 2 of them contain binary data (0s and 1s). We then defined our feature set by setting X to include Gasoline stock Price, GSPC Open, GSPC High, GSPC Low, GSPC Close, Stock Perc Change and Stock Change. Finally, we defined our target vector which includes the Gas change column only. 
    
 The data was split into Train and Test sets with random state of 1, scaled and fitted. For the Gradient Booster we created a classifier object with different learning rates. Then fitted and scored the model and the resulted in the following accuracy scores for each learning rate  
 
@@ -154,7 +142,6 @@ Learning rate:  1
 Accuracy score (training): 0.889
 Accuracy score (validation): 0.643
 
-
 The Confusion Matrix provided the following results
 
 <p align="center" width="50%">
@@ -167,7 +154,7 @@ The Confusion Matrix provided the following results
  
 **Current Results**: Our original model choice was a linear regression since our data fitted a regression type rather than a classification type. However, this did not indicate that our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type, we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show that our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we will try to improve it in our next phase. 
 
-**Results Update**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvemet. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
+**Results Update**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvememt. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
 
 ### Database Integration
 
@@ -176,7 +163,7 @@ Below is an example of the data structure we started out with.
 <p align="center" width="100%">
     <img width="90%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/main%20data_R%20analysis.png">
 
-Below are the tables created through a sql query that resulted in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successfull importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
+Below are the tables created through a sql query that resulted in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successful importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Tables.png">
