@@ -6,9 +6,9 @@ Our group came together with a shared interest in stocks. After discussing sever
 
 For our **data source**, we will be combining S&P 500 index data from Yahoo with weekly gas price data from EIA using sql. 
 
-   1. S&P 500 Index from [Yahoo Finance](https://finance.yahoo.com/))
+   1. S&P 500 Index from [Yahoo Finance](https://finance.yahoo.com/)
 
-   2. Gas Prices from [EIA](https://www.eia.gov/petroleum/gasdiesel/))
+   2. Gas Prices from [EIA](https://www.eia.gov/petroleum/gasdiesel/)
 
    3. Final Data Source: [PostgresSQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
 
@@ -32,7 +32,7 @@ Our independent variable is the Stock Prices and our Y variable is the Gas Price
 For the first model, we selected GSPC Close price as our x label and Gas Price as our Y label and created a scatter plot to see how the data behaved. The Scatter Plot below indicates some sort of correlation; however, we also see some data clustered in one area. This made us realize that in order to get more accurate results, we needed to incorporate different models.
 
 <p align="center" width="100%">
-    <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png">
+    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_1.png">
     
 
 For the second model, we created a Scikit-learn and performed the linear regression on the 9 columns. Then fit the data into the model. Using Scikit-Learn to perform a Linear Regression test for 1,068 values, we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304. The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lacks steepness. Like the first model, we found that more models are needed to test correlation and find a better prediction.
@@ -40,7 +40,7 @@ For the second model, we created a Scikit-learn and performed the linear regress
 
 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
+    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Graph_2.png">
       
 We then created a predicted Y values based on X values and plotted the results for a best fit line. The slope was 0.00025558 and the y-intercept was 2.0820572529674304. 
 
@@ -49,15 +49,7 @@ We then created a predicted Y values based on X values and plotted the results f
 Further test where necessary for the Linear Regression Model. Therefore we split the data into train and test data (80/20). 
 
 <p align="center" width="100%">
-   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/training_set_linear_regression.png">
-
-
-
-
-
-<p align="center" width="100%">
-   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Week%203%20-%20%20Nadia/test_set_linear_regression.png">
-   
+   <img width="70%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/GSPC%20Close.png">
    
    
    More testing was necessary.
@@ -100,8 +92,7 @@ pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
 They're both close to the mean for the weekly gas price which is 2.538233
 
 
-# Classification Model
-
+### Classification Model
 
 The Data was also converted into a classification model using the percentage change between the new and old price of gas and stocks where if there was a decrease it will be indicated with a 0 and an increase with a 1.
 
@@ -110,7 +101,7 @@ We used Ensemble methods and Gradient Boosting to complete this part.
 **The prediction vs. Actual**
   
 <p align="Left" width="40%">
-    <img width="40%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png">
+    <img width="40%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/predictionmodel.png">
     
 To further find strong correlation in our data, we performed a Decision tree and random forest model with ensemble method such as gradient boosting. Before we were able to do this, we needed to transform our data into a classification type by adding 6 additional columns where 2 of them contain binary data (0s and 1s). We then defined our feature set by setting X to include Gasoline stock Price, GSPC Open, GSPC High, GSPC Low, GSPC Close, Stock Perc Change and Stock Change. Finally, we defined our target vector which includes the Gas change column only. 
    
