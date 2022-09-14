@@ -110,28 +110,28 @@ The data was split into Train and Test sets with random state of 1, scaled and f
 **Learning Rate**
    
       Learning rate:  0.05
-Accuracy score (training): 0.667
-Accuracy score (validation): 0.596
+      Accuracy score (training): 0.667
+      Accuracy score (validation): 0.596
 
-Learning rate:  0.1
-Accuracy score (training): 0.726
-Accuracy score (validation): 0.615
+      Learning rate:  0.1
+      Accuracy score (training): 0.726
+      Accuracy score (validation): 0.615
 
-Learning rate:  0.25
-Accuracy score (training): 0.812
-Accuracy score (validation): 0.620
+      Learning rate:  0.25
+      Accuracy score (training): 0.812
+      Accuracy score (validation): 0.620
 
-Learning rate:  0.5
-Accuracy score (training): 0.876
-Accuracy score (validation): 0.648
+      Learning rate:  0.5
+      Accuracy score (training): 0.876
+      Accuracy score (validation): 0.648
 
-Learning rate:  0.75
-Accuracy score (training): 0.876
-Accuracy score (validation): 0.643
+      Learning rate:  0.75
+      Accuracy score (training): 0.876
+      Accuracy score (validation): 0.643
 
-Learning rate:  1
-Accuracy score (training): 0.889
-Accuracy score (validation): 0.643
+      Learning rate:  1
+      Accuracy score (training): 0.889
+      Accuracy score (validation): 0.643
 
 The Confusion Matrix provided the following results
 
