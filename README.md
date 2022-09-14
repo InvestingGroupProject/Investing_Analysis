@@ -4,7 +4,7 @@
 
 Our group came together with a shared interest in stocks. After discussing several options for our project, we decided it'd be interesting to see if there are any correlations between stocks and the high gas prices we all experienced in the last few months. 
 
-For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
+For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
 
 ### Machine Learning Model
    
