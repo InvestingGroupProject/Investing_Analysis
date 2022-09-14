@@ -4,13 +4,7 @@
 
 Our group came together with a shared interest in stocks. After discussing several options for our project, we decided it'd be interesting to see if there are any correlations between stocks and the high gas prices we all experienced in the last few months. 
 
-For our **data source**, we will be combining S&P 500 index data from Yahoo with weekly gas price data from EIA using sql. 
-
-   1. S&P 500 Index from [Yahoo Finance](https://finance.yahoo.com/)
-
-   2. Gas Prices from [EIA](https://www.eia.gov/petroleum/gasdiesel/)
-
-   3. Final Data Source: [PostgresSQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
+For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query to get final data source](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
 
 ### Machine Learning Model
    
@@ -143,9 +137,9 @@ The Confusion Matrix provided the following results
  <p align="center" width="50%">
     <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
  
-**Current Results**: Our original model choice was a linear regression since our data fitted a regression type rather than a classification type. However, this did not indicate that our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type, we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show that our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we will try to improve it in our next phase. 
+**Initial Results**: Our original model choice was a linear regression since our data fitted a regression type rather than a classification type. However, this did not indicate that our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type, we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show that our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we will try to improve it in our next phase. 
 
-**Results Update**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvememt. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
+**Final Results**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvememt. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
 
 ### Database Integration
 
