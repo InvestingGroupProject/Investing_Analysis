@@ -40,7 +40,7 @@ We then created a predicted Y values based on X values and plotted the results f
 
 
 
-Further test where necessary for the Linear Regression Model. Therefore we split the data into train and test data (80/20). 
+Further test where necessary for the Linear Regression Model. Therefore, we split the data into train and test data (80/20). 
 
 <p align="center" width="100%">
    <img width="70%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/GSPC%20Close.png">
