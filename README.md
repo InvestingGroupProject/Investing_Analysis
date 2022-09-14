@@ -4,7 +4,7 @@
 
 Our group came together with a shared interest in stocks. After discussing several options for our project, we decided it'd be interesting to see if there are any correlations between stocks and the high gas prices we all experienced in the last few months. 
 
-For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
+For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query.](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
 
 ### Machine Learning Model
    
@@ -90,12 +90,10 @@ They're both close to the mean for the weekly gas price which is 2.538233
 
 The Data was also converted into a classification model using the percentage change between the new and old price of gas and stocks where if there was a decrease it will be indicated with a 0 and an increase with a 1.
 
-We used Ensemble methods and Gradient Boosting to complete this part.
+We used Ensemble methods and [Gradient Boosting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting.ipynb) to complete this part.
 
-**The prediction vs. Actual**
+[**The prediction vs. Actual**](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Gradient_Boosting_prediction_pic.png)
   
-<p align="Left" width="40%">
-    <img width="40%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/predictionmodel.png">
     
 To further find strong correlation in our data, we performed a Decision tree and random forest model with ensemble method such as gradient boosting. Before we were able to do this, we needed to transform our data into a classification type by adding 6 additional columns where 2 of them contain binary data (0s and 1s). We then defined our feature set by setting X to include Gasoline stock Price, GSPC Open, GSPC High, GSPC Low, GSPC Close, Stock Perc Change and Stock Change. Finally, we defined our target vector which includes the Gas change column only. 
    
@@ -127,15 +125,9 @@ The data was split into Train and Test sets with random state of 1, scaled and f
       Accuracy score (training): 0.889
       Accuracy score (validation): 0.643
 
-The Confusion Matrix provided the following results
-
-<p align="center" width="50%">
-    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png">
+[Confusion Matrix Results](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/Confusion_matrix_results.png)
      
- Finally, the Classification Report provided the following results
- 
- <p align="center" width="50%">
-    <img width="50%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png">
+[The Classification Report Results](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/Nadiezhda-Hernandez/Week%202%20-%20Nadia/classification_report.png)
  
 **Initial Results**: Our original model choice was a linear regression since our data fitted a regression type rather than a classification type. However, this did not indicate that our data had a strong correlation and we needed to use different methods to reduce bias and variance. By changing our data to a classificatin type, we are able to use ensemble methods with decision tree and random forest to help boost the accuracy of the models and be able to show that our data has a strong correlation. Some of the limitations we found by the classification report is that our data has an accuracy score of 59% which is low and we will try to improve it in our next phase. 
 
@@ -150,17 +142,14 @@ Below is an example of the data structure we started out with.
 
 Below are the tables created through a sql query that resulted in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successful importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
 
-<p align="center" width="100%">
-    <img width="60%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Tables.png">
+[Tables in PostgreSQL](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Tables.png)
     
        Database Integration Table using for Machine Learning and Simple Linear regression R analysis
 
 <p align="center" width="100%">
     <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
 
-And the code used to integrate our data source is outlined below:
-<p align="center" width="100%">
-    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188805371-647e6f16-66a3-4eab-a585-2a6f00df19b2.png">
+[Here is the code used to integrate our data source](https://user-images.githubusercontent.com/103073631/188805371-647e6f16-66a3-4eab-a585-2a6f00df19b2.png)
 
 Further, we can confirm a successful [integration](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Exportingsummarytable.png), of three tables: [Gas Factor](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasFactorsTable.png), [Gas Prices](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasPriceTable.png) and a [Gas Summary Table](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Summary_gasoline_price_factors.png)
 
