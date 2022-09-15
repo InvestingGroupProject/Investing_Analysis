@@ -2,9 +2,21 @@
 
 ### Overview 
 
-Our group came together with a shared interest in stocks. After discussing several options for our project, we decided it'd be interesting to see if there are any correlations between stocks and the high gas prices we all experienced in the last few months. 
+Our group came together with a shared interest in stocks. After discussing several options for our project, we decided it'd be interesting to see if there's a correlations between stock and gas price. 
 
 For our **data source**, we combined S&P 500 index data from [Yahoo Finance](https://finance.yahoo.com/) with weekly gas price data from [EIA](https://www.eia.gov/petroleum/gasdiesel/). The final data source was combined using [PostgresSQL Query.](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/mainquery.sql)
+
+### Database Integration
+
+Below is an example of the data structure we started out with.
+
+<p align="center" width="100%">
+    <img width="90%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/main%20data_R%20analysis.png">
+    
+       Database Integration Table using for Machine Learning and Simple Linear regression R analysis
+
+<p align="center" width="100%">
+    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
 
 ### Machine Learning Model
    
@@ -16,10 +28,7 @@ The first step in building our ML model was to clean up the data. We did this by
 
 ***Data Types: Multivariate***
 
-Our independent variable is the Stock Prices and our Y variable is the Gas Prices. 
-
-<p align="center" width="100%">
-    <img width="88%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Table_image.png">
+Our independent variable is the Stock Prices and our Y variable is the Gas Prices. [Data Table Example](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Table_image.png)
 
 **Models**
 
@@ -30,7 +39,6 @@ For the first model, we selected GSPC Close price as our x label and Gas Price a
     
 
 For the second model, we created a Scikit-learn and performed the linear regression on the 9 columns. Then fit the data into the model. Using Scikit-Learn to perform a Linear Regression test for 1,068 values, we get a Slope of 0.00025558 and a Y-intercept = 2.0820572529674304. The slope indicates the steepness of a line and the intercept indicates the location where it intersects an axis. The slope and the intercept define the linear relationship between two variables, and can be used to estimate an average rate of change. The greater the magnitude of the slope, the steeper the line and the greater the rate of change which means one variable is dependent of the other. In this case our line lacks steepness. Like the first model, we found that more models are needed to test correlation and find a better prediction.
-
 
 
 <p align="center" width="100%">
@@ -133,29 +141,16 @@ The data was split into Train and Test sets with random state of 1, scaled and f
 
 **Final Results**: The gradient_boost model for the classification part of our model was updated and we were able to achieve an accuracy score of 65% which is a big improvement. Perhaps our data needs new features in order for the accuracy to increase a lot more but it would be a great opportunity to continue working on as there is great potential to have a better prediction rate. 
 
-### Database Integration
-
-Below is an example of the data structure we started out with.
-
+### Unsupervised Learning
+The Elbow Method gives cluster count (3-5) based on WCSS algorith for the K-means.  Then the clusters in the 3-D model show trends/influencing factors.
 <p align="center" width="100%">
-    <img width="90%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/main%20data_R%20analysis.png">
+   <img width="66%" src="https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Unsupervised.png">
 
-Below are the tables created through a PostgreSQL query that resulted in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successful importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
 
-[Tables in PostgreSQL](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Tables.png)
-    
-       Database Integration Table using for Machine Learning and Simple Linear regression R analysis
+### Resources
 
-<p align="center" width="100%">
-    <img width="95%" src="https://user-images.githubusercontent.com/103073631/188518704-95e1a338-12cc-4b15-884c-4483ba553e16.png">
-
-[Here is the code used to integrate our data source](https://user-images.githubusercontent.com/103073631/188805371-647e6f16-66a3-4eab-a585-2a6f00df19b2.png)
-
-Further, we can confirm a successful [integration](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Exportingsummarytable.png), of three tables: [Gas Factor](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasFactorsTable.png), [Gas Prices](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasPriceTable.png) and a [Gas Summary Table](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Summary_gasoline_price_factors.png)
-
-### Dashboard
-
-[Stock & Gas Price Google Storyboard](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
-
-We will be creating a [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockGasAnalysisCapstoneProject/Story1?publish=yes). Some of the interactive elements include filters by year (for both gas & stock overview) as well as the various graphs we will be replicating from R and ML.
-
+   1. [Stock & Gas Price Google Storyboard](https://docs.google.com/presentation/d/1g-wiozkn8TRJa1SklJrCTKV2E0PoE5pEpq2GHLDPEtY/edit?usp=sharing)
+   2. [Tableau Dashboard](https://public.tableau.com/app/profile/monica1331/viz/StockGasAnalysisCapstoneProject/Story1?publish=yes).
+   3. [Code used to integrate our data source](https://user-images.githubusercontent.com/103073631/188805371-647e6f16-66a3-4eab-a585-2a6f00df19b2.png)
+   4. Confirmation of a [successful integration](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Exportingsummarytable.png), of three tables: [Gas Factor](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasFactorsTable.png), [Gas Prices](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/GasPriceTable.png) and a [Gas Summary Table](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20R%20analysis/DatabaseIMGs/Summary_gasoline_price_factors.png
+   5. [Tables](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Tables.png) created through a PostgreSQL resulting in the ***Final Data Source: [Gas & Stocks](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/static_data/ExportingMainData_Gas_Stocks.csv)*** through [successful importing and exporting](https://github.com/InvestingGroupProject/Stock_And_Gas_Analysis/blob/main/Resources/Database%20Integration/DatabaseTablesIMGs/Importing%20and%20Exporting.png)
