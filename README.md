@@ -83,13 +83,8 @@ Further test where necessary for the Linear Regression Model. Therefore, we spli
    
    
    
-Predicting a new result with Linear Regression
-lr.predict([[1505.97]])  Result: [2.47487911]
-The actual number is 1.503
-
-Predicting a new result with Polymonial Regression
-pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
-
+    1. Predicting a new result with Linear Regression lr.predict([[1505.97]])  Result: [2.47487911] The actual number is 1.503
+    2. Predicting a new result with Polymonial Regression pol_reg.predict(poly_reg.fit_transform([[1505.97]]))  Result: [2.81717812]
 
 They're both close to the mean for the weekly gas price which is 2.538233
 
